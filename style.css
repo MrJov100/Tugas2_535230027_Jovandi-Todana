@@ -1,0 +1,206 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #333;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin-left: 20px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.navbar ul li a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #333;
+  color: white;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.header p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -60px;
+}
+
+.profile-section img {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  border: 5px solid #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.school-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.school-year {
+  font-size: 1rem;
+  color: #666;
+}
+
+.about,
+.education,
+.skills,
+.certificates,
+.contact {
+  margin-top: 40px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about h2,
+.education h2,
+.skills h2,
+.certificates h2,
+.contact h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.about p,
+.education p,
+.skills p,
+.certificates p,
+.contact p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #666;
+}
+
+.education ul,
+.skills ul,
+.certificates ul {
+  list-style: none;
+  padding: 0;
+}
+
+.education li,
+.skills li,
+.certificates li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.education li:last-child,
+.skills li:last-child,
+.certificates li:last-child {
+  border-bottom: none;
+}
+
+.contact a {
+  color: #333;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.linkedin-icon {
+  margin-right: 8px;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  margin-top: 40px;
+}
+
+@media (min-width: 768px) {
+  .profile-section {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .profile-section img {
+    margin-right: 30px;
+  }
+
+  .about,
+  .education,
+  .skills,
+  .certificates,
+  .contact {
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header h1 {
+    font-size: 3rem;
+  }
+
+  .header p {
+    font-size: 1.5rem;
+  }
+
+  .profile-section {
+    align-items: flex-start;
+  }
+
+  .about,
+  .education,
+  .skills,
+  .certificates,
+  .contact {
+    margin-top: 80px;
+  }
+}
